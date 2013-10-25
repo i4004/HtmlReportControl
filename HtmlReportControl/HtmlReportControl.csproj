@@ -64,7 +64,6 @@
     <AssemblyOriginatorKeyFile>HtmlReportControl.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ExcelRichTextHtmlUtility.cs" />
     <Compile Include="HtmlReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
