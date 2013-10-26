@@ -76,6 +76,9 @@
     <None Include="HtmlReportControl.snk" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="HtmlReport.en.resx">
+      <DependentUpon>HtmlReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HtmlReport.resx">
       <DependentUpon>HtmlReport.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HtmlReport));
 			this._webBrowser = new System.Windows.Forms.WebBrowser();
 			this._buttonPrint = new System.Windows.Forms.Button();
 			this._buttonExport = new System.Windows.Forms.Button();
@@ -40,80 +41,57 @@
 			// 
 			// _webBrowser
 			// 
-			this._webBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this._webBrowser.Location = new System.Drawing.Point(0, 43);
-			this._webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+			resources.ApplyResources(this._webBrowser, "_webBrowser");
 			this._webBrowser.Name = "_webBrowser";
-			this._webBrowser.Size = new System.Drawing.Size(940, 567);
-			this._webBrowser.TabIndex = 0;
 			// 
 			// _buttonPrint
 			// 
-			this._buttonPrint.Location = new System.Drawing.Point(87, 6);
+			resources.ApplyResources(this._buttonPrint, "_buttonPrint");
 			this._buttonPrint.Name = "_buttonPrint";
-			this._buttonPrint.Size = new System.Drawing.Size(75, 23);
-			this._buttonPrint.TabIndex = 6;
-			this._buttonPrint.Text = "Печать...";
 			this._buttonPrint.UseVisualStyleBackColor = true;
 			this._buttonPrint.Click += new System.EventHandler(this.OnButtonPrintClick);
 			// 
 			// _buttonExport
 			// 
-			this._buttonExport.Location = new System.Drawing.Point(6, 6);
+			resources.ApplyResources(this._buttonExport, "_buttonExport");
 			this._buttonExport.Name = "_buttonExport";
-			this._buttonExport.Size = new System.Drawing.Size(75, 23);
-			this._buttonExport.TabIndex = 7;
-			this._buttonExport.Text = "Экспорт...";
 			this._buttonExport.UseVisualStyleBackColor = true;
 			this._buttonExport.Click += new System.EventHandler(this.OnButtonExportClick);
 			// 
 			// _buttonSearch
 			// 
-			this._buttonSearch.Location = new System.Drawing.Point(369, 6);
+			resources.ApplyResources(this._buttonSearch, "_buttonSearch");
 			this._buttonSearch.Name = "_buttonSearch";
-			this._buttonSearch.Size = new System.Drawing.Size(75, 23);
-			this._buttonSearch.TabIndex = 8;
-			this._buttonSearch.Text = "Поиск";
 			this._buttonSearch.UseVisualStyleBackColor = true;
 			this._buttonSearch.Click += new System.EventHandler(this.OnButtonSearchClick);
 			// 
 			// _textBoxSearchText
 			// 
-			this._textBoxSearchText.Location = new System.Drawing.Point(168, 8);
+			resources.ApplyResources(this._textBoxSearchText, "_textBoxSearchText");
 			this._textBoxSearchText.Name = "_textBoxSearchText";
-			this._textBoxSearchText.Size = new System.Drawing.Size(195, 20);
-			this._textBoxSearchText.TabIndex = 9;
 			this._textBoxSearchText.TextChanged += new System.EventHandler(this.OnSearchTextChanged);
 			// 
 			// panel1
 			// 
+			resources.ApplyResources(this.panel1, "panel1");
 			this.panel1.Controls.Add(this._buttonSearch);
 			this.panel1.Controls.Add(this._buttonExport);
 			this.panel1.Controls.Add(this._textBoxSearchText);
 			this.panel1.Controls.Add(this._buttonPrint);
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Name = "panel1";
-			this.panel1.Padding = new System.Windows.Forms.Padding(3);
-			this.panel1.Size = new System.Drawing.Size(940, 37);
-			this.panel1.TabIndex = 10;
 			// 
 			// _saveFileDialog
 			// 
 			this._saveFileDialog.DefaultExt = "html";
-			this._saveFileDialog.Filter = "HTML files|*.html";
+			resources.ApplyResources(this._saveFileDialog, "_saveFileDialog");
 			// 
 			// HtmlReport
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this._webBrowser);
-			this.Margin = new System.Windows.Forms.Padding(0);
 			this.Name = "HtmlReport";
-			this.Size = new System.Drawing.Size(940, 610);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
