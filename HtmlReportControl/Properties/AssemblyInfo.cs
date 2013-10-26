@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("HtmlReportControl")]
-[assembly: AssemblyDescription("System.Windows.Form Html Report Control")]
+[assembly: AssemblyDescription("System.Windows.Forms Html Report Control")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Alexander Krylkov")]
 [assembly: AssemblyProduct("HtmlReportControl")]
